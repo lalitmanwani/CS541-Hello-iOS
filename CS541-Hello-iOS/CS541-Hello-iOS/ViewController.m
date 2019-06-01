@@ -48,7 +48,12 @@ int x = 0;
     
 }
 
-
+- (void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    
+    
+      [self changefunc];
+}
 
 
 
