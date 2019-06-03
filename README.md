@@ -19,9 +19,6 @@ Also added a button to change the language.
 
 Update 1.2
 Added a new Layout.
-
-
-Update 2.0
 Added New Shake Gesture to the Hello World App to change the language.
 Added two new Languages
 
