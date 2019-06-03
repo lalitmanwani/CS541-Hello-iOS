@@ -21,7 +21,9 @@ NSString *nameimg[] = {
     @"Dutch",
     @"French",
     @"Chinese",
-    @"Arabic"
+    @"Arabic",
+    @"Italian",
+    @"Brazalian"
 };
 int x = 0;
 
@@ -41,10 +43,10 @@ int x = 0;
 - (void)changefunc{
     
     srand(0);
-    x = arc4random() % 6;
+    x = arc4random() % 8;
     
     _nameImage.image = [UIImage imageNamed: nameimg[x]];
-    printf("%d",x);
+    
     
 }
 
