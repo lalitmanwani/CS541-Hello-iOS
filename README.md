@@ -25,3 +25,6 @@ Added two new Languages
 Update 3
 Added Sound Effects to all the different languages.
 
+Update 3.1
+Added a new Language Picker
+Having Bugs in Sound.

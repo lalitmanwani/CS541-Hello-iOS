@@ -148,7 +148,7 @@ int x = 0;
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
     _nameImage.image = [UIImage imageNamed: pickernames[row]];
-  /*  NSString *sound = sounds[row];
+ /* NSString *sound = sounds[row];
     
     NSString *path = [[NSBundle mainBundle] pathForResource:sound ofType:@".mp3"];
     NSURL *soundURL = [NSURL fileURLWithPath:path];
