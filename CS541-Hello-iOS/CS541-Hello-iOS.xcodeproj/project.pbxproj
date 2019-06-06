@@ -13,6 +13,16 @@
 		EE8761A622A0D9090096C881 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE8761A522A0D9090096C881 /* Assets.xcassets */; };
 		EE8761A922A0D9090096C881 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE8761A722A0D9090096C881 /* LaunchScreen.storyboard */; };
 		EE8761AC22A0D9090096C881 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8761AB22A0D9090096C881 /* main.m */; };
+		EEBA7BD222A8B76F00CE56D7 /* Italian.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EEBA7BC822A8B76F00CE56D7 /* Italian.mp3 */; };
+		EEBA7BD322A8B76F00CE56D7 /* Brazilian.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EEBA7BC922A8B76F00CE56D7 /* Brazilian.mp3 */; };
+		EEBA7BD422A8B76F00CE56D7 /* English.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EEBA7BCA22A8B76F00CE56D7 /* English.mp3 */; };
+		EEBA7BD522A8B76F00CE56D7 /* French.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EEBA7BCB22A8B76F00CE56D7 /* French.mp3 */; };
+		EEBA7BD622A8B76F00CE56D7 /* Korean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EEBA7BCC22A8B76F00CE56D7 /* Korean.mp3 */; };
+		EEBA7BD722A8B76F00CE56D7 /* Japanese.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EEBA7BCD22A8B76F00CE56D7 /* Japanese.mp3 */; };
+		EEBA7BD822A8B76F00CE56D7 /* Dutch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EEBA7BCE22A8B76F00CE56D7 /* Dutch.mp3 */; };
+		EEBA7BD922A8B76F00CE56D7 /* Hindi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EEBA7BCF22A8B76F00CE56D7 /* Hindi.mp3 */; };
+		EEBA7BDA22A8B76F00CE56D7 /* Chinese.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EEBA7BD022A8B76F00CE56D7 /* Chinese.mp3 */; };
+		EEBA7BDB22A8B76F00CE56D7 /* Arabic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EEBA7BD122A8B76F00CE56D7 /* Arabic.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +36,16 @@
 		EE8761A822A0D9090096C881 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE8761AA22A0D9090096C881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE8761AB22A0D9090096C881 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EEBA7BC822A8B76F00CE56D7 /* Italian.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Italian.mp3; path = "CS541-Hello-iOS/sounds/Italian.mp3"; sourceTree = SOURCE_ROOT; };
+		EEBA7BC922A8B76F00CE56D7 /* Brazilian.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Brazilian.mp3; path = "CS541-Hello-iOS/sounds/Brazilian.mp3"; sourceTree = SOURCE_ROOT; };
+		EEBA7BCA22A8B76F00CE56D7 /* English.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = English.mp3; path = "CS541-Hello-iOS/sounds/English.mp3"; sourceTree = SOURCE_ROOT; };
+		EEBA7BCB22A8B76F00CE56D7 /* French.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = French.mp3; path = "CS541-Hello-iOS/sounds/French.mp3"; sourceTree = SOURCE_ROOT; };
+		EEBA7BCC22A8B76F00CE56D7 /* Korean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Korean.mp3; path = "CS541-Hello-iOS/sounds/Korean.mp3"; sourceTree = SOURCE_ROOT; };
+		EEBA7BCD22A8B76F00CE56D7 /* Japanese.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Japanese.mp3; path = "CS541-Hello-iOS/sounds/Japanese.mp3"; sourceTree = SOURCE_ROOT; };
+		EEBA7BCE22A8B76F00CE56D7 /* Dutch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Dutch.mp3; path = "CS541-Hello-iOS/sounds/Dutch.mp3"; sourceTree = SOURCE_ROOT; };
+		EEBA7BCF22A8B76F00CE56D7 /* Hindi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Hindi.mp3; path = "CS541-Hello-iOS/sounds/Hindi.mp3"; sourceTree = SOURCE_ROOT; };
+		EEBA7BD022A8B76F00CE56D7 /* Chinese.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Chinese.mp3; path = "CS541-Hello-iOS/sounds/Chinese.mp3"; sourceTree = SOURCE_ROOT; };
+		EEBA7BD122A8B76F00CE56D7 /* Arabic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Arabic.mp3; path = "CS541-Hello-iOS/sounds/Arabic.mp3"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +62,16 @@
 		84A83DF622A87A8F00374724 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				EEBA7BD122A8B76F00CE56D7 /* Arabic.mp3 */,
+				EEBA7BC922A8B76F00CE56D7 /* Brazilian.mp3 */,
+				EEBA7BD022A8B76F00CE56D7 /* Chinese.mp3 */,
+				EEBA7BCE22A8B76F00CE56D7 /* Dutch.mp3 */,
+				EEBA7BCA22A8B76F00CE56D7 /* English.mp3 */,
+				EEBA7BCB22A8B76F00CE56D7 /* French.mp3 */,
+				EEBA7BCF22A8B76F00CE56D7 /* Hindi.mp3 */,
+				EEBA7BC822A8B76F00CE56D7 /* Italian.mp3 */,
+				EEBA7BCD22A8B76F00CE56D7 /* Japanese.mp3 */,
+				EEBA7BCC22A8B76F00CE56D7 /* Korean.mp3 */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -136,9 +166,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEBA7BD622A8B76F00CE56D7 /* Korean.mp3 in Resources */,
+				EEBA7BD922A8B76F00CE56D7 /* Hindi.mp3 in Resources */,
+				EEBA7BD822A8B76F00CE56D7 /* Dutch.mp3 in Resources */,
 				EE8761A922A0D9090096C881 /* LaunchScreen.storyboard in Resources */,
 				EE8761A622A0D9090096C881 /* Assets.xcassets in Resources */,
 				EE8761A422A0D9080096C881 /* Main.storyboard in Resources */,
+				EEBA7BD422A8B76F00CE56D7 /* English.mp3 in Resources */,
+				EEBA7BD722A8B76F00CE56D7 /* Japanese.mp3 in Resources */,
+				EEBA7BDA22A8B76F00CE56D7 /* Chinese.mp3 in Resources */,
+				EEBA7BD322A8B76F00CE56D7 /* Brazilian.mp3 in Resources */,
+				EEBA7BD522A8B76F00CE56D7 /* French.mp3 in Resources */,
+				EEBA7BDB22A8B76F00CE56D7 /* Arabic.mp3 in Resources */,
+				EEBA7BD222A8B76F00CE56D7 /* Italian.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
