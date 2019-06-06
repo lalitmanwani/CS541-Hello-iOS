@@ -14,16 +14,20 @@
 @interface ViewController ()
 {
     AVAudioPlayer *_audioPlayer;
+    NSArray *pickernames;
+   
     
 }
 @property (weak, nonatomic) IBOutlet UIImageView *nameImage;
+
 
 @end
 void changefunc(void);
 
 @implementation ViewController
 
-NSString *nameimg[] = {
+
+NSString *nameimages[] = {
     @"English",
     @"Hindi",
     @"Dutch",
@@ -35,7 +39,9 @@ NSString *nameimg[] = {
     @"Korean",
     @"Japanese"
 };
-int x = 0;
+
+
+
 
 NSString *sounds[] = {
     @"English",
@@ -48,17 +54,37 @@ NSString *sounds[] = {
     @"Brazalian",
     @"Korean",
     @"Japanese"
-    
 };
+
+
+
+
+int x = 0;
+
 
 
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+     pickernames = @[
+        @"English",
+        @"Hindi",
+        @"Dutch",
+        @"French",
+        @"Chinese",
+        @"Arabic",
+        @"Italian",
+        @"Brazalian",
+        @"Korean",
+        @"Japanese"
+        ];
     // Do any additional setup after loading the view.
+    self.pickerView.dataSource = self;
+    self.pickerView.delegate = self;
       [self changefunc];
 }
+    
 - (IBAction)imagechanger:(id)sender {
     [self changefunc];
     
@@ -71,9 +97,9 @@ NSString *sounds[] = {
     srand(0);
     x = arc4random() % 10;
     
-    _nameImage.image = [UIImage imageNamed: nameimg[x]];
+    _nameImage.image = [UIImage imageNamed: nameimages[x]];
     
-    
+  /*
     NSString *sound = sounds[x];
     
     NSString *path = [[NSBundle mainBundle] pathForResource:sound ofType:@".mp3"];
@@ -82,8 +108,15 @@ NSString *sounds[] = {
     _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundURL error:NULL];
 
     [_audioPlayer play];
-    
+  */
 };
+
+
+
+
+
+
+
 
 - (void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {
@@ -94,12 +127,35 @@ NSString *sounds[] = {
 
 
 
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
+    
+    return 1;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    return pickernames.count;
+}
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    
+    return pickernames[row];
+}
 
 
 
-
-
-
-
-
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+    _nameImage.image = [UIImage imageNamed: pickernames[row]];
+  /*  NSString *sound = sounds[row];
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:sound ofType:@".mp3"];
+    NSURL *soundURL = [NSURL fileURLWithPath:path];
+    
+    _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundURL error:NULL];
+    
+    [_audioPlayer play];
+ */
+}
 @end

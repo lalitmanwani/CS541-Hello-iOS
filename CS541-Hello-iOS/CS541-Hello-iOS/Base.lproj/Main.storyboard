@@ -42,12 +42,17 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mti-6N-qSb">
+                                <rect key="frame" x="0.0" y="732" width="414" height="130"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="0.92885937812981412" green="0.80366461446682935" blue="0.96897417306900024" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="nameImage" destination="No4-aQ-X38" id="SPw-ZW-twP"/>
+                        <outlet property="nameImage" destination="No4-aQ-X38" id="k2b-0e-9Nh"/>
+                        <outlet property="pickerView" destination="mti-6N-qSb" id="oGS-dz-c4A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
