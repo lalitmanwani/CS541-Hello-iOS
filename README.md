@@ -17,10 +17,11 @@ Update 1.1
 Added new 5 Languages to say HELLo in.
 Also added a button to change the language.
 
-Update 1.2
+Update 2
 Added a new Layout.
 Added New Shake Gesture to the Hello World App to change the language.
 Added two new Languages
 
-
+Update 3
+Added Sound Effects to all the different languages.
 
