@@ -7,14 +7,22 @@
 //
 
 #import "ViewController.h"
+#import <AVFoundation/AVFoundation.h>
+#import <AudioToolbox/AudioToolbox.h>
+
 
 @interface ViewController ()
+{
+    AVAudioPlayer *_audioPlayer;
+    
+}
 @property (weak, nonatomic) IBOutlet UIImageView *nameImage;
 
 @end
 void changefunc(void);
 
 @implementation ViewController
+
 NSString *nameimg[] = {
     @"English",
     @"Hindi",
@@ -28,6 +36,22 @@ NSString *nameimg[] = {
     @"Japanese"
 };
 int x = 0;
+
+NSString *sounds[] = {
+    @"English",
+    @"Hindi",
+    @"Dutch",
+    @"French",
+    @"Chinese",
+    @"Arabic",
+    @"Italian",
+    @"Brazalian",
+    @"Korean",
+    @"Japanese"
+    
+};
+
+
 
 
 - (void)viewDidLoad {
@@ -50,7 +74,16 @@ int x = 0;
     _nameImage.image = [UIImage imageNamed: nameimg[x]];
     
     
-}
+    NSString *sound = sounds[x];
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:sound ofType:@".mp3"];
+    NSURL *soundURL = [NSURL fileURLWithPath:path];
+    
+    _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundURL error:NULL];
+
+    [_audioPlayer play];
+    
+};
 
 - (void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {
