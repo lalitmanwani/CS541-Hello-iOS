@@ -26,7 +26,7 @@ void changefunc(void);
 
 @implementation ViewController
 
-
+/*
 NSString *nameimages[] = {
     @"English",
     @"Hindi",
@@ -56,7 +56,7 @@ NSString *sounds[] = {
     @"Japanese"
 };
 
-
+*/
 
 
 int x = 0;
@@ -75,7 +75,7 @@ int x = 0;
         @"Chinese",
         @"Arabic",
         @"Italian",
-        @"Brazalian",
+        @"Brazilian",
         @"Korean",
         @"Japanese"
         ];
@@ -97,10 +97,10 @@ int x = 0;
     srand(0);
     x = arc4random() % 10;
     
-    _nameImage.image = [UIImage imageNamed: nameimages[x]];
+    _nameImage.image = [UIImage imageNamed: pickernames[x]];
     
-  /*
-    NSString *sound = sounds[x];
+  
+    NSString *sound = pickernames[x];
     
     NSString *path = [[NSBundle mainBundle] pathForResource:sound ofType:@".mp3"];
     NSURL *soundURL = [NSURL fileURLWithPath:path];
@@ -108,7 +108,7 @@ int x = 0;
     _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundURL error:NULL];
 
     [_audioPlayer play];
-  */
+  
 };
 
 
@@ -148,7 +148,7 @@ int x = 0;
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
     _nameImage.image = [UIImage imageNamed: pickernames[row]];
- /* NSString *sound = sounds[row];
+  NSString *sound = pickernames[row];
     
     NSString *path = [[NSBundle mainBundle] pathForResource:sound ofType:@".mp3"];
     NSURL *soundURL = [NSURL fileURLWithPath:path];
@@ -156,6 +156,6 @@ int x = 0;
     _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundURL error:NULL];
     
     [_audioPlayer play];
- */
+ 
 }
 @end
