@@ -2,7 +2,7 @@
 //  ViewController.m
 //  CS541-Hello-iOS
 //
-//  Created by Saket Chinchalikar on 5/30/19.
+//  Created by Lalit Manwani on 5/30/19.
 //  Copyright © 2019 Lalit. All rights reserved.
 //
 
@@ -26,37 +26,7 @@ void changefunc(void);
 
 @implementation ViewController
 
-/*
-NSString *nameimages[] = {
-    @"English",
-    @"Hindi",
-    @"Dutch",
-    @"French",
-    @"Chinese",
-    @"Arabic",
-    @"Italian",
-    @"Brazalian",
-    @"Korean",
-    @"Japanese"
-};
 
-
-
-
-NSString *sounds[] = {
-    @"English",
-    @"Hindi",
-    @"Dutch",
-    @"French",
-    @"Chinese",
-    @"Arabic",
-    @"Italian",
-    @"Brazalian",
-    @"Korean",
-    @"Japanese"
-};
-
-*/
 
 
 int x = 0;
